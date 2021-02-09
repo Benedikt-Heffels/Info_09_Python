@@ -1,0 +1,37 @@
+Entscheide: True oder False?
+
+b1 = True
+b2 = False
+x = 17
+y = 9
+txt1 = ""
+txt2 = "Hallo Welt"
+_______________________________________________________________
+
+b1 and b2
+False. "True" und "False" können nicht beide wahr (True) sein.
+
+b1 or b2
+True. b1 ist "True".
+
+not b2
+True. b2 ist False, und es soll ja gerade nicht b2 sein
+
+"a" in txt2
+True. "a" kommt in txt2 vor
+
+x > y
+True. x ist größer als y.
+
+x != y
+True. x und y haben unterschiedliche Werte
+
+txt1 and y < x
+False. txt1 ist Falsch (leere Zeichenkette). (siehe Aufgabe 3_Programm)
+
+txt2 or b2
+True. txt2 ist True, und es muss nur eines von beiden True sein.
+
+(b1 or b2) and (txt1 or txt2) and True
+True. Aus jeder Klammer ist eine Funktion True (b1 und txt2). True ist eh immer True
+
