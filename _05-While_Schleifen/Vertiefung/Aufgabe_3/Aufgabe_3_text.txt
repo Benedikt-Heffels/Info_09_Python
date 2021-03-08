@@ -1,0 +1,17 @@
+x = int(input("Eine Zahl bitte:")) #Hier muss man eine Zahl eingeben
+y = 1 #y wird auf 1 gesetzt
+l = [] #Es wird einen neue Liste erstellt
+
+if x <= 1000: #Wenn x (eingegebene Zahl) kleiner als 1000 ist, führe den Code aus
+    while 2 * y < x: #Solange 2+y (y = 1) kleiner als x ist, führe den Code aus
+        if x % y <= 0: #wenn der Rest von x geteilt durch y kleiner 0 ist (bzw. parktisch gleich Null ist), führe den folgenden Code aus
+            l.append(y) #Füge y der Liste l hinzu
+        y = y + 1 #Addiere zu y eins/erhöhe y um eins
+    l.append(x) #Füge der Liste x hinzu, wenn die while-Schleife vorbei ist, also 2*y größer x ist
+    print(l) #Drucke die Liste
+
+Wenn x unter 1000 ist, wird geschaut, wie viel 2+y ist. Solange 2*y weniger ist als x, wird der Rest von x geteilt durch y berechnet.
+Sollte der Rest 0 sein, wird y der Liste hinzugefügt. Sobald 2*y jedoch größer werden würde als x, wird nur noch x der Liste hinzugefügt
+jede Zahl ist durch sich selbst teilbar) und anschließend wird die Liste ausgedruckt.
+
+Das Programm berechnet, durch welche Zahlen x glatt teilbar ist.

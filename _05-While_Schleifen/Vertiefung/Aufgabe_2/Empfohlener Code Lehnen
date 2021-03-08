@@ -1,0 +1,8 @@
+fertig_zufallszahlen_erzeugen = False
+while not fertig_zufallszahlen_erzeugen:
+    zufallszahl = random.randint(1, 49)
+    if zufallszahl not in zufallszahlen:
+        zufallszahlen.append(zufallszahl)
+    if len(zufallszahlen) == 6:
+        fertig_zufallszahlen_erzeugen = True
+print(zufallszahlen)
