@@ -2,14 +2,14 @@ import random
 
 #Listen für Ja und Nein
 Ja = ["Ja", "JA", "ja", "j", "J", "yes", "Y"]
-Nein = ["Nein", "NEIN", "nein", "n", "N", "no"]
+Nein = ["Nein", "NEIN", "nein", "n", "N", "no", "Ne"]
 
 
 #Funktionen zur Eingabe der Tipps
 def eingabe_kontrolleV1(eingabe_zahl):
     if eingabe_zahl in eingabe_liste or eingabe_zahl <= 0 or eingabe_zahl >= 49:
-        eingabe_zahl_weiterer_Versuch = int(input("Bitte geben Sie ihre Zahl Nummer "  + str(len(eingabe_liste) + 1) + " erneut ein. "
-                                                  "Beachten sie, dass diese Zahl zwischen 1 und 49 liegen muss und sie diese Zahl noch nicht getippt haben dürfen! "))
+        eingabe_zahl_weiterer_Versuch = int(input("Bitte geben Sie Ihre Zahl Nummer "  + str(len(eingabe_liste) + 1) + " erneut ein. "
+                                                  "Beachten Sie, dass diese Zahl zwischen 1 und 49 liegen muss und Sie diese Zahl noch nicht getippt haben dürfen! "))
         eingabe_kontrolleV2(eingabe_zahl_weiterer_Versuch)
     else:
         eingabe_liste.append(eingabe_zahl)
@@ -17,7 +17,7 @@ def eingabe_kontrolleV1(eingabe_zahl):
 
 def eingabe_kontrolleV2(eingabe_zahl_weiterer_Versuch):
     if eingabe_zahl_weiterer_Versuch in eingabe_liste or eingabe_zahl_weiterer_Versuch <= 0 or eingabe_zahl_weiterer_Versuch >= 49:
-        eingabe_zahl_weiterer_Versuch = int(input("Bitte geben Sie ihre Zahl Nummer "  + str(len(eingabe_liste) + 1) + " erneut ein. "
+        eingabe_zahl_weiterer_Versuch = int(input("Bitte geben Sie Ihre Zahl Nummer " + str(len(eingabe_liste) + 1) + " erneut ein. "
                                                   "Beachten Sie, dass diese Zahl zwischen 1 und 49 liegen muss und Sie diese Zahl noch nicht getippt haben dürfen! "))
         eingabe_kontrolleV2(eingabe_zahl_weiterer_Versuch)
     else:
@@ -54,8 +54,11 @@ def richtige_loesungen_waeren_gewesen(richtige_liste):
 
 #Weiterspiel-Funktionen
 def neuer_Versuch():
-    neue_Runde = input("Wollen Sie eine weitere Runde spielen und ihr Glück erhöhen? ")
-    go = Spiel_Start(neue_Runde)
+    neue_Runde = input("Wollen Sie eine weitere Runde spielen und Ihr Glück erhöhen? ")
+    if neue_Runde in Ja:
+        go = True
+    else:
+        go = False
     return go
 
 
