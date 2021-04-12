@@ -5,7 +5,7 @@ def funktion(x):
 print("Anfang")
 funktion("A")
 print("\nMitte 1")
-x = "B"
+x = "_07b-For_Schleife_Teil_2"
 funktion(x)
 print("\nMitte 2")
 y = "C"

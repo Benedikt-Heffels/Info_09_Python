@@ -2,7 +2,7 @@ def funktion_a():
     print("Hallo! Ich bin Funktion A!")
     funktion_b()
 def funktion_b():
-    print("Hallo! Ich bin Funktion B!")
+    print("Hallo! Ich bin Funktion _07b-For_Schleife_Teil_2!")
     funktion_a()
 
 # hier fängt der Hauptteil an
