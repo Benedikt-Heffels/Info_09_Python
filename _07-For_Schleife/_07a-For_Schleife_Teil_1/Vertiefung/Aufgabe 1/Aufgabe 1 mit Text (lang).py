@@ -14,7 +14,7 @@ def Auswahl_Erklaer (wahl, Ende):
         Auswahl_inex(inex_Ende_ohne_Erklaerung, Ende)
 
 
-# def Auswahl (wahl, Ende):
+# def Hauptmenü (wahl, Ende):
 #     if wahl == "Inklusive":
 #         Ende_neu = Ende + 1
 #     elif wahl == "Exklusive":
@@ -23,7 +23,7 @@ def Auswahl_Erklaer (wahl, Ende):
 #         print("Inklusive bedeutet, dass der Wert, denn sie als Ende eingegeben haben, auch in der Liste auftaucht.")
 #         print("Exklusive bedeutet, dass dieser Wert nicht in der Liste auftaucht.")
 #         inex_Ende_ohne_Erklaerung = input("Soll das Ende inklusive oder exklusive genommen werden? ('Inklusive'/'Exklusive')")
-#         Auswahl (inex_Ende_ohne_Erklaerung, Ende)
+#         Hauptmenü (inex_Ende_ohne_Erklaerung, Ende)
 #     return Ende_neu
 
 
