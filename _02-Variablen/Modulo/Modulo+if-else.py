@@ -4,5 +4,5 @@ y = int(x) % 2 #Die Zahl wird umgeformt und der Rest berechnet
 if y == 0:
     print("Zahl gerade!")
 
-else :
+else:
     print("Zahl ungerade!")
