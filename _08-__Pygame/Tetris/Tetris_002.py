@@ -26,6 +26,7 @@ while bRun:
         if event.type == pygame.QUIT:
             bRun = False
 
+
     pygame.draw.rect(win, block_colors[random_color], (block_x, block_y + block_speed, block_size, block_size))
     block_speed += 5
     if block_speed == block_size * 20 - 70:
