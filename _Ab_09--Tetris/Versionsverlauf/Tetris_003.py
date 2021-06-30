@@ -23,7 +23,7 @@ random_color = random.randint(0, 6)
 
 pygame.init()
 pygame.display.set_mode((board_width, board_height))
-pygame.display.set_caption("Tetris")
+pygame.display.set_caption("_Ab_09--Tetris")
 win = pygame.display.get_surface()
 bRun = True
 while bRun:
